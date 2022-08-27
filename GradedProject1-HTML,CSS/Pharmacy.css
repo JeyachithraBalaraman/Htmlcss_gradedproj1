@@ -1,0 +1,182 @@
+/******main page************/
+body{
+    height: auto;
+    margin: 0%;
+}
+header h1 {
+    background-color: rgb(122, 121, 165);
+    text-align: center;
+    height: 30px;
+    padding: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    }
+
+#navigate {
+    position:sticky;
+    z-index:1;
+}
+
+.menu {
+    
+    margin:0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu li a {
+    color: whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu li:nth-child(2):hover #Dropdown_1 {
+    display: block;
+    margin-top: 15px;
+    margin-left: -10px;
+
+}
+
+.menu li:nth-child(3):hover #Dropdown_2 {
+    display: block;
+    margin-top: 15px;
+    margin-left: -10px;
+
+}
+
+#Dropdown_2,
+#Dropdown_1 {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    background-color: whitesmoke;
+    padding: 0%;
+}
+
+#Dropdown_2 li,
+#Dropdown_1 li {
+    display: block;
+}
+
+#Dropdown_2 li a,
+#Dropdown_1 li a {
+    color: steelblue;
+    font-size: 16px;
+
+}
+
+#Dropdown_2 li:hover,
+#Dropdown_1 li:hover {
+    background-color: gainsboro;
+}
+
+/***********************animation of images*******************/
+/*Pafson's comment
+        For "n" images you must define:(n=5)
+        a=presentation time for one image  (a=2)
+        b=duration for cross-fading (b=3)
+        total animation-duration t=(a+b)*n  ( t=(2+3)*5=5*5=25 sec)
+        animation-delay=t/n or a+b [5]
+        Percentage for keyframes:
+        1:0%
+        2.a/t*100%   [2/25*100=8]
+        3.(a+b)/t*100%=1/n*100%  [1/5*100%=20]
+        4.100%-(b/t*100%)  [100%-(3/25*100%) = 88]
+        5.100%
+        */
+#fading {
+    border: 2px solid steelblue;
+}
+
+#fading img {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    animation-name: FadeInOut;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    }
+
+@keyframes FadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    88% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#fading img:nth-of-type(1) {
+    animation-delay: 25s;
+}
+
+#fading img:nth-of-type(2) {
+    animation-delay: 20s;
+}
+
+#fading img:nth-of-type(3) {
+    animation-delay: 15s;
+}
+
+#fading img:nth-of-type(4) {
+    animation-delay: 10s;
+}
+
+#fading img:nth-of-type(5) {
+    animation-delay: 5s;
+}
+
+#fading .btn {
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(324%, -179%);
+    border-radius: 10px;
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 30px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: text-top;
+    height: fit-content;
+
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    color: antiquewhite;
+    display: inline-block;
+    bottom: 0;
+    height: 5%;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}

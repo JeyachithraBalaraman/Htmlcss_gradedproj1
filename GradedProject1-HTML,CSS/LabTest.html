@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LabTest.css">
+    <title>Lab Test</title>
+</head>
+
+<body>
+    <section>
+        <aside>
+            <img src="Images-GP1\Lab-Test\lab-test.jpg"
+                alt="lab test">
+        </aside>
+        <div id="form-div">
+            <form action="">
+                <article class="input-style-1">
+                    <h4>&nbsp &nbsp 1.Your Contact Details</h4><br>
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                    <input type="text" name="patientId" placeholder="PatientId if exists"><br>
+                    <input type="text" name="contactNumber" placeholder="Contact Number" required>
+                    <input type="email" name="eMail" placeholder="Email id" required><br>
+                </article>
+                <article class="input-style-1">
+                    <h4>&nbsp &nbsp 2.Address</h4>
+                    <input type="number" name="houseNumber" placeholder="H-No" required>
+                    <input type="text" name="Street" placeholder="Street" required><br>
+                    <input type="text" name="Area" placeholder="Area" required>
+                </article>
+                <article class="input-style-2">
+                    <h5>&nbsp &nbsp District</h5>
+                    <select name="district" id="district">
+                        <option>Choose</option>
+                        <option value="warangalUrban">Warangal Urban</option>
+                        <option value="warangalRural">Warangal Rural</option>
+                        <option value="khammam">Khammam</option>
+                        <option value="narsempet">Narsempet</option>
+                        <option value="aler">Aler</option>
+                        <option value="hanamkonda">Hanamkonda</option>
+                    </select>
+                </article>
+                <article class="input-style-2">
+                    <h4>&nbsp &nbsp 3.Choose the Test Type</h4>
+                    <input type="checkbox" name="testtype" value="cbc">
+                    <label for="cbc">CBC</label>
+                    <input type="checkbox" name="testtype" value="urine">
+                    <label for="urine">Complete Urine</label>
+                    <input type="checkbox" name="testtype" value="lipid">
+                    <label for="lipid">Lipid Profile</label><br>
+                    <input type="checkbox" name="testtype" value="tsh">
+                    <label for="tsh">Thyroid Stimulating Hormone</label>
+                    <input type="checkbox" name="testtype" value="glucose">
+                    <label for="glucose">Glucose Test</label>
+                </article>
+                <article class="input-style-2">
+                    <h4>&nbsp &nbsp 4.Do you want hard copy of report</h4>
+                    <input type="radio" name="hardcopy" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="hardcopy" value="no">
+                    <label for="no">No</label>
+                </article>
+                <article class="input-style-2">
+                    <h4>&nbsp &nbsp 5.Select your comfortable Date and Time</h4>
+                    <input type="date" name="date" placeholder="date" required>
+                    <input type="time" name="time" placeholder="time" required><br>
+                </article>
+        </div>
+    </section>
+    <div id="button-div">
+        <button type="reset" value="Clear Form">Reset</button>
+        <button type="submit" value="Submit">Submit</button>
+
+    </div>
+    </form>
+    <a href="Pharmacy.html">
+        <button>Go Back</button>
+    </a>
+</body>
+
+</html>

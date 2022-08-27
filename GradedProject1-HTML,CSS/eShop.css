@@ -1,0 +1,55 @@
+
+/**** CSS properties of eShop******/
+section{
+    width: 95%;
+    height: 95%;
+    border: solid black 1px;
+    position: absolute;
+    overflow-y: auto;
+    box-shadow: 0 5px 10px 0 gray, 0 5px 10px 0 gray;
+}
+/***************all div properties*************/
+div{
+    display:inline-block;
+    margin:10px;
+  
+    border-style: hidden;
+    border-radius: 20px;
+    background-color: lightblue;
+    height:300px;
+}
+div:hover{
+    width:250px;
+    height:350px;
+
+}
+/*************all Para and image properties*********/
+p {
+    line-height: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: blue;
+    margin-left: 10px;
+}
+img{
+    width: 200px;;
+    height: 130px;
+    contain:strict;
+    margin-left:15px;;
+}
+/****** button properties and mentioned colors upon hover******/
+button:hover{
+    background-color: rgb(250,234,230);
+    border-color: rgb(0,255,76);
+}
+button{
+    width:230px;
+    height:37px;
+    background-color: rgb(129, 192, 235);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(235, 157, 23);
+    margin-left: 3px;
+}
+
